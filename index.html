@@ -100,12 +100,12 @@
     // Fetch JSON data from GitHub and display it in a code block
     fetch(jsonDataUrl)
         .then(jsonData => response.json())
-        .then(data => {
-            const tableContainer = document.getElementById('table-container');
-            const pre = document.createElement('pre');
-            pre.textContent = JSON.stringify(data, null, 2);
-            tableContainer.appendChild(pre);
-        })
+        // .then(data => {
+        //     const tableContainer = document.getElementById('table-container');
+        //     const pre = document.createElement('pre');
+        //     pre.textContent = JSON.stringify(data, null, 2);
+        //     tableContainer.appendChild(pre);
+        // })
         .catch(error => console.error('Error fetching JSON data:', error));
     // Function to convert JSON to HTML table
     function jsonToTable(json) {
