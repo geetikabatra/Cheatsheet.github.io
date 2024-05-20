@@ -105,7 +105,7 @@
         const headers = Object.keys(json[0]);
         const headerRow = document.createElement('tr');
         headers.forEach(header => {
-            const th = document.createElement('th');
+            const th = document.createElement('th');    
             th.textContent = header;
             headerRow.appendChild(th);
         });
@@ -128,7 +128,7 @@
     }
 
     // Render the table
-    const tableContainer = document.getElementById('table-container');
+    const tableContainer = document.getElementById('data-container');
     tableContainer.appendChild(jsonToTable(jsonData));
 </script>
 
