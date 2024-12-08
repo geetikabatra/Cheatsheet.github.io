@@ -1,4 +1,5 @@
-categories: [
+{
+  categories: [
     {
       name: "Sessions",
       items: [
@@ -42,4 +43,5 @@ categories: [
       ]
     },
     // Add more categories as needed
-]
+  ]
+};
