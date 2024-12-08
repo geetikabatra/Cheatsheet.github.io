@@ -1,0 +1,46 @@
+categories: [
+    {
+      name: "Sessions",
+      items: [
+        {
+          desc: "Start a new session",
+          shell: ["tmux", "tmux new", "tmux new-session"],
+          tmuxcmd: ["new"],
+          keywords: ["create"]
+        },
+        {
+          desc: "Start a new session with name",
+          shell: ["tmux new -s mysession"],
+          tmuxcmd: ["new -s mysession"],
+          keywords: ["create", "named"]
+        },
+        {
+          desc: "Detach from session",
+          shortcut: ["Ctrl + b", "d"],
+          keywords: ["exit", "detach"]
+        }
+      ]
+    },
+    {
+      name: "Windows",
+      items: [
+        {
+          desc: "Create window",
+          shortcut: ["Ctrl + b", "c"],
+          keywords: ["new", "create"]
+        },
+        {
+          desc: "List windows",
+          shortcut: ["Ctrl + b", "w"],
+          keywords: ["show", "list"]
+        },
+        {
+          desc: "Rename current window",
+          shortcut: ["Ctrl + b", ","],
+          keywords: ["name", "change"]
+        }
+      ]
+    },
+    // Add more categories as needed
+  ]
+};
